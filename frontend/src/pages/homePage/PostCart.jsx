@@ -4,6 +4,7 @@ import React, { useState, useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 import { TokenContext, UserIdContext, NameContext } from '../../App'
+<<<<<<< HEAD
 import avatarHomme from './avatar-homme.png'
 import avatarFemme from './avatar-femme.jpg'
 import { FirstnameContext } from '../../App'
@@ -27,6 +28,19 @@ const PostCard = (props) => {
 
     const [modification, setModification] = useState(false)
 
+=======
+
+const PostCard = (props) => {
+    const Swal = require('sweetalert2')           
+    const { post, setPosts } = props.data
+
+    let [token, setToken] = React.useContext(TokenContext)
+    let [userId, setUserId] = React.useContext(UserIdContext)
+    let [name, setName] = React.useContext(NameContext)
+
+    const [modification, setModification] = useState(false)
+         
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
     //*****************Modification d'un post */
     //--Récupération de la saisie de textArea et de l'image
     const textAreaAndImage = useRef([])
@@ -51,9 +65,13 @@ const PostCard = (props) => {
             formData.append('image', form[2].files[0])
 
             fetch(
+<<<<<<< HEAD
                 process.env.NODE_ENV === 'production'
                     ? production + '/' + postId
                     : developpement + '/' + postId,
+=======
+                'https://reseau-social-d-entreprise.herokuapp.com/groupomania/posts/' + postId,
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                 requestOptionsModifiyPost
             )
                 .then((response) => response.json())
@@ -66,18 +84,26 @@ const PostCard = (props) => {
                         },
                     }
                     const newArrayPosts = fetch(
+<<<<<<< HEAD
                         process.env.NODE_ENV === 'production'
                             ? production
                             : developpement,
+=======
+                        'https://reseau-social-d-entreprise.herokuapp.com/groupomania/posts',
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                         requestOptions
                     )
                         .then((response) => response.json())
                         .then((data) => {
                             const posts = data.slice().sort(function (a, b) {
+<<<<<<< HEAD
                                 return (
                                     new Date(b.createdAt) -
                                     new Date(a.createdAt)
                                 )
+=======
+                                return new Date(b.createdAt) - new Date(a.createdAt)
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                             })
                             setPosts(posts)
                             if (posts) {
@@ -89,9 +115,13 @@ const PostCard = (props) => {
             formData.append('post', form[0].value)
 
             fetch(
+<<<<<<< HEAD
                 process.env.NODE_ENV === 'production'
                     ? production + '/' + postId
                     : developpement + '/' + postId,
+=======
+                'https://reseau-social-d-entreprise.herokuapp.com/groupomania/posts/' + postId,
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                 requestOptionsModifiyPost
             )
                 .then((response) => response.json())
@@ -104,18 +134,26 @@ const PostCard = (props) => {
                         },
                     }
                     const newArrayPosts = fetch(
+<<<<<<< HEAD
                         process.env.NODE_ENV === 'production'
                             ? production
                             : developpement,
+=======
+                        'https://reseau-social-d-entreprise.herokuapp.com/groupomania/posts',
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                         requestOptions
                     )
                         .then((response) => response.json())
                         .then((data) => {
                             const posts = data.slice().sort(function (a, b) {
+<<<<<<< HEAD
                                 return (
                                     new Date(b.createdAt) -
                                     new Date(a.createdAt)
                                 )
+=======
+                                return new Date(b.createdAt) - new Date(a.createdAt)
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                             })
                             setPosts(posts)
                             if (posts) {
@@ -128,9 +166,13 @@ const PostCard = (props) => {
             formData.append('image', form[2].files[0])
 
             fetch(
+<<<<<<< HEAD
                 process.env.NODE_ENV === 'production'
                     ? production + '/' + postId
                     : developpement + '/' + postId,
+=======
+                'https://reseau-social-d-entreprise.herokuapp.com/groupomania/posts/' + postId,
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                 requestOptionsModifiyPost
             )
                 .then((response) => response.json())
@@ -143,18 +185,26 @@ const PostCard = (props) => {
                         },
                     }
                     const newArrayPosts = fetch(
+<<<<<<< HEAD
                         process.env.NODE_ENV === 'production'
                             ? production
                             : developpement,
+=======
+                        'https://reseau-social-d-entreprise.herokuapp.com/groupomania/posts',
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                         requestOptions
                     )
                         .then((response) => response.json())
                         .then((data) => {
                             const posts = data.slice().sort(function (a, b) {
+<<<<<<< HEAD
                                 return (
                                     new Date(b.createdAt) -
                                     new Date(a.createdAt)
                                 )
+=======
+                                return new Date(b.createdAt) - new Date(a.createdAt)
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                             })
                             setPosts(posts)
                             if (posts) {
@@ -169,14 +219,22 @@ const PostCard = (props) => {
     const handleDelete = async (event) => {
         event.preventDefault()
         let target = event.target.id
+<<<<<<< HEAD
+=======
+        console.log(target)
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
         const requestOptionsDelete = {
             method: 'DELETE',
             headers: { Authorization: 'Bearer ' + token },
         }
         fetch(
+<<<<<<< HEAD
             process.env.NODE_ENV === 'production'
                 ? production + '/' + target
                 : developpement + '/' + target,
+=======
+            'https://reseau-social-d-entreprise.herokuapp.com/groupomania/posts/' + target,
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
             requestOptionsDelete
         )
             .then((response) => response.json())
@@ -189,9 +247,13 @@ const PostCard = (props) => {
                     },
                 }
                 const newArrayPosts = fetch(
+<<<<<<< HEAD
                     process.env.NODE_ENV === 'production'
                         ? production
                         : developpement,
+=======
+                    'https://reseau-social-d-entreprise.herokuapp.com/groupomania/posts',
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                     requestOptions
                 )
                     .then((response) => response.json())
@@ -232,27 +294,39 @@ const PostCard = (props) => {
             }
 
             await fetch(
+<<<<<<< HEAD
                 process.env.NODE_ENV === 'production'
                     ? production + '/' + postId
                     : developpement + '/' + postId,
                 +'/like',
+=======
+                'https://reseau-social-d-entreprise.herokuapp.com/groupomania/posts/' + postId + '/like',
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                 requestOptionsLike
             )
                 .then((response) => response.json())
                 .then((data) => {
                     const newArrayPosts = fetch(
+<<<<<<< HEAD
                         process.env.NODE_ENV === 'production'
                             ? production
                             : developpement,
+=======
+                        'https://reseau-social-d-entreprise.herokuapp.com/groupomania/posts',
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                         requestOptions
                     )
                         .then((response) => response.json())
                         .then((data) => {
                             const posts = data.slice().sort(function (a, b) {
+<<<<<<< HEAD
                                 return (
                                     new Date(b.createdAt) -
                                     new Date(a.createdAt)
                                 )
+=======
+                                return new Date(b.createdAt) - new Date(a.createdAt)
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                             })
                             setPosts(posts)
                         })
@@ -272,32 +346,45 @@ const PostCard = (props) => {
             }
 
             await fetch(
+<<<<<<< HEAD
                 process.env.NODE_ENV === 'production'
                     ? production + '/' + postId + '/like'
                     : developpement + '/' + postId + '/like',
+=======
+                'https://reseau-social-d-entreprise.herokuapp.com/groupomania/posts/' + postId + '/like',
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                 requestOptionsLike
             )
                 .then((response) => response.json())
                 .then((data) => {
                     const newArrayPosts = fetch(
+<<<<<<< HEAD
                         process.env.NODE_ENV === 'production'
                             ? production
                             : developpement,
+=======
+                        'https://reseau-social-d-entreprise.herokuapp.com/groupomania/posts',
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                         requestOptions
                     )
                         .then((response) => response.json())
                         .then((data) => {
                             const posts = data.slice().sort(function (a, b) {
+<<<<<<< HEAD
                                 return (
                                     new Date(b.createdAt) -
                                     new Date(a.createdAt)
                                 )
+=======
+                                return new Date(b.createdAt) - new Date(a.createdAt)
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                             })
                             setPosts(posts)
                         })
                 })
         }
     }
+<<<<<<< HEAD
     //-- Commentaires *****************************************
     const newComment = useRef([])
     const addNewComment = (el) => {
@@ -373,16 +460,25 @@ const PostCard = (props) => {
     }
 
     return post.userId === userId || name === process.env.REACT_APP_NAME ? (
+=======
+
+    return post.userId === userId ||
+        name === process.env.REACT_APP_NAME ? (
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
         modification ? (
             <div className="displayPost">
                 <div className="conteneur">
                     <h1 className="dispayNamePoster">
                         Mode modification activé
                     </h1>
+<<<<<<< HEAD
                     <form
                         onSubmit={sendModification}
                         className="displayTexteareaModificationMode"
                     >
+=======
+                    <form onSubmit={sendModification} className="displayTexteareaModificationMode">
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                         <textarea
                             name="post"
                             type="text"
@@ -416,6 +512,7 @@ const PostCard = (props) => {
                 </div>
             </div>
         ) : (
+<<<<<<< HEAD
             <div data-set={post._id} className="displayPost" key={post._id}>
                 <div className="conteneur" key={post._id + post._id}>
                     <div
@@ -495,6 +592,29 @@ const PostCard = (props) => {
                     </div>
                 </div>
                 {/*                 <div className="displayButtons">
+=======
+            <div data-set={post._id} className="displayPost">
+                <div className="conteneur">
+                    <h1 className="dispayNamePoster">{post.name === name ? "Votre post" : post.name}</h1>
+                    <h1 className="dispayNamePoster">{`Publié le ${new Date(
+                        post.createdAt
+                    ).toLocaleDateString('fr')} à ${new Date(
+                        post.createdAt
+                    ).toLocaleTimeString('fr')}`}</h1>
+                    <div className="displayTextAndImage">
+                        <div className="displayImage">
+                            <img
+                                src={post.imageUrl}
+                                alt=""
+                                align="right"
+                                className="image"
+                            />
+                            <p className="displayText">{post.post}</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="displayButtons">
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                     <button
                         id={post._id}
                         className="styleButton widthButtonModify"
@@ -529,6 +649,7 @@ const PostCard = (props) => {
                     >
                         Supprimer
                     </button>
+<<<<<<< HEAD
                 </div> */}
             </div>
         )
@@ -602,6 +723,33 @@ const PostCard = (props) => {
                 </div>
             </div>
             {/*             <div className="displayLikes">
+=======
+                </div>
+            </div>
+        )
+    ) : (
+        <div className="displayPost">
+            <div className="conteneur">
+                <h1 className="dispayNamePoster">Publié par : {post.name}</h1>
+                <h1 className="dispayNamePoster">
+                    {`Publié le ${new Date(post.createdAt).toLocaleDateString(
+                        'fr'
+                    )} à ${new Date(post.createdAt).toLocaleTimeString('fr')}`}
+                </h1>
+                <div className="displayTextAndImage">
+                    <div className="displayImage">
+                        <img
+                            src={post.imageUrl}
+                            alt=""
+                            align="right"
+                            className="image"
+                        />
+                        <p className="displayText">{post.post}</p>
+                    </div>
+                </div>
+            </div>
+            <div className="displayLikes">
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
                 <div className="displayLikesAndNumberLikes">
                     {!post.usersLiked.includes(userId) ? (
                         <FontAwesomeIcon
@@ -620,7 +768,11 @@ const PostCard = (props) => {
                     )}
                     <p className="numberOfLikes">{post.likes}</p>
                 </div>
+<<<<<<< HEAD
             </div> */}
+=======
+            </div>
+>>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
         </div>
     )
 }
