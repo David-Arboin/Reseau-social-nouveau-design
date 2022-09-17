@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
     font-family: 'caviar_dreams';
     src: url('../../fonts/caviar_dreams/CaviarDreams.ttf');
@@ -11,8 +10,6 @@
     font-weight: normal;
     font-style: normal;
 }
-=======
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -24,7 +21,6 @@
         background-position: 0% 50%;
     }
 }
-<<<<<<< HEAD
 .display-logo {
     position: absolute;
     z-index: 2;
@@ -35,25 +31,18 @@
 .display-logo img {
     width: 100%;
 }
-=======
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
 input[type='text'],
 input[type='email'],
 input[type='password'],
 input[type='reset'],
 input[type='submit'] {
-<<<<<<< HEAD
     background-color: #f8f6f9;
-=======
-    background-color: $color-secondary;
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
     background-size: 200% 200%;
     animation: gradient 15s ease infinite;
     padding: 0.5vw;
     font-weight: bolder;
     transition: ease-in-out, width 0.35s ease-in-out;
 }
-<<<<<<< HEAD
 #day,
 #month,
 #year,
@@ -174,25 +163,6 @@ input[type='email'] {
 
 input[type='password'] {
     width: 90%;
-=======
-#backgroudColorSubmitLogin,
-#backgroudColorSubmitSignUp,
-#backgroudColorSubmitSignIn{
-    background-color: $color-secondary;
-    color: $color-black;
-}
-
-input[type='text'] {
-    width: 40%;
-}
-
-input[type='email'] {
-    width: 50%;
-}
-
-input[type='password'] {
-    width: 60%;
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
 }
 
 input[type='text']:focus,
@@ -208,34 +178,23 @@ input[type='submit']:focus-visible {
     transform: scale(1.5);
     color: $color-white;
 }
-<<<<<<< HEAD
 input[type='submit'] {
     width: 100%;
 }
 #backgroudColorSubmitLogin:focus-visible,
 #backgroudColorSubmitSignUp:focus-visible,
 #backgroudColorSubmitSignIn:focus-visible {
-=======
-#backgroudColorSubmitLogin:focus-visible,
-#backgroudColorSubmitSignUp:focus-visible,
-#backgroudColorSubmitSignIn:focus-visible{
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
     background-color: $color-black;
     color: $color-white;
 }
 input[type='reset'],
 input[type='submit'] {
     color: $color-black;
-<<<<<<< HEAD
     border-radius: 0.3vw;
-=======
-    border-radius: 0.5vw;
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
 }
 h1,
 label,
 .messageTeamTechnique {
-<<<<<<< HEAD
     color: black;
     font-family: 'aubrey';
     width: 80%;
@@ -246,21 +205,11 @@ label,
     font-weight: bolder;
 }
 .SwalWelcome.fire-text {
-=======
-    color: $color-white;
-    font-family: 'Roboto', sans-serif;
-}
-.messageTeamTechnique {
-    text-align: justify;
-}
-.SwalWelcome.fire-text{
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
     font-size: 5vw;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
 }
 #emailSignIn::placeholder,
 #passwordSignIn::placeholder,
-<<<<<<< HEAD
 #passwordSignIn::placeholder {
     color: $color-black;
     padding-left: 0;
@@ -307,23 +256,6 @@ section {
     width: 55%;
     background: #f9f9f9;
 }
-=======
-#emailSignUp::placeholder,
-#passwordSignIn::placeholder,
-#nameSignUp::placeholder,
-#passwordSignUp::placeholder {
-    color: $color-black;
-    padding-left: 0;
-}
-
-section {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: $color-tertiary;
-}
-
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
 .error {
     text-align: left;
     color: $color-alert;
@@ -334,7 +266,6 @@ section {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-<<<<<<< HEAD
     align-items: center;
 }
 .display-day-month-year {
@@ -357,11 +288,6 @@ section {
     flex-direction: row;
     justify-content: space-between;
 }
-=======
-    padding-left: 10%;
-}
-
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
 .displayLogin {
     aspect-ratio: 1/0.7;
 }
@@ -391,7 +317,6 @@ label .password-icon .fa-eye-slash {
 h1,
 label {
     font-size: 2vw;
-<<<<<<< HEAD
     color: black;
 }
 
@@ -409,25 +334,6 @@ label {
 .displayResetSubmit {
     margin-bottom: 5%;
 }
-=======
-}
-.signUp,
-.signIn,
-.signInAfterSignUp
- {
-    text-align: center;
-    margin-top: 5%;
-    border-radius: 5%;
-    background-color: $color-primary;
-    -webkit-box-shadow: 5px 5px 14px 8px $color-secondary;
-    box-shadow: 5px 5px 14px 8px $color-secondary;
-}
-.signInAfterSignUp{
-    margin: 0 0 5vw 0;
-
-}
-
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
 /*Smartphone*/
 @media (max-width: 426px) {
     section {
@@ -445,14 +351,8 @@ label {
     .App {
         height: auto;
         background-color: $color-tertiary;
-<<<<<<< HEAD
     }
 
-=======
-
-    }
-   
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
     .signUp,
     .signIn {
         text-align: center;
@@ -463,11 +363,7 @@ label {
         margin-bottom: 5vw;
     }
     .signUp {
-<<<<<<< HEAD
         height: 80vh;
-=======
-        height: 78vw;
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
     }
 
     .widthTextNameOrPseeudo {
@@ -510,10 +406,6 @@ label {
     .separator {
         height: 1%;
         aspect-ratio: 50/1;
-<<<<<<< HEAD
-=======
-        background-color: $color-tertiary;
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
     }
 
     .displayLogin,
@@ -535,11 +427,7 @@ label {
     label {
         text-align: left;
     }
-<<<<<<< HEAD
     .numberOfLikes {
-=======
-    .numberOfLikes{
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
         font-size: 3.5vw;
         font-weight: bolder;
     }
@@ -575,10 +463,6 @@ label {
     .separator {
         width: 1%;
         aspect-ratio: 1/100;
-<<<<<<< HEAD
-=======
-        background-color: $color-tertiary;
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
     }
 
     .displayLogin,
@@ -596,10 +480,6 @@ label {
     }
     .signIn,
     .signUp {
-<<<<<<< HEAD
-=======
-        height: 40vw;
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
         margin-bottom: 5vw;
     }
 
@@ -624,11 +504,7 @@ label {
     #passwordSignUp::placeholder {
         font-size: 1.5vw;
     }
-<<<<<<< HEAD
     .messageTeamTechnique {
-=======
-    .messageTeamTechnique{
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
         font-size: 3vw;
         width: 80%;
     }
@@ -646,28 +522,14 @@ label {
     .separator {
         width: 1%;
         aspect-ratio: 1/100;
-<<<<<<< HEAD
-=======
-        background-color: $color-tertiary;
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
     }
     section {
         flex-wrap: wrap;
     }
 
     .signIn {
-<<<<<<< HEAD
         width: 60%;
         aspect-ratio: 1/1;
-=======
-        width: 30%;
-        height: 30vw;
-    }
-
-    .signUp {
-        width: 32.5%;
-        height: 30vw;
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
     }
 
     .input:focus-visible {
@@ -677,11 +539,7 @@ label {
     }
 
     .displayResetSubmit {
-<<<<<<< HEAD
         width: 90%;
-=======
-        width: 60%;
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
         display: flex;
         justify-content: space-between;
     }
@@ -694,29 +552,17 @@ label {
         font-size: 1vw;
     }
 
-<<<<<<< HEAD
     #emailSignIn::placeholder {
         font-size: 1vw;
     }
     #emailSignUp::placeholder {
         font-size: 1.5vw;
     }
-=======
-    #emailSignIn::placeholder,
-    #emailSignUp::placeholder {
-        font-size: 1vw;
-    }
-
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
     #passwordSignIn::placeholder,
     #passwordSignUp::placeholder {
         font-size: 1vw;
     }
-<<<<<<< HEAD
     .messageTeamTechnique {
-=======
-    .messageTeamTechnique{
->>>>>>> 8c2a6ddc9acc13f4dcd16cd7d61c9ee2e3484d3a
         font-size: 3vw;
         width: 80%;
     }
