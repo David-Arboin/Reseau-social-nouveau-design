@@ -183,7 +183,7 @@ export default function SignUp(params) {
                 }),
             }
             fetch(
-                process.env.NODE_ENV === 'production'
+                process.env.REACT_APP_ENVIRONMENT === 'production'
                     ? 'https://reseau-social-d-entreprise.herokuapp.com/groupomania/auth/signup'
                     : 'http://localhost:8000/groupomania/auth/signup',
                 requestOptions

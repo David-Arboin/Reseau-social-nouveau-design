@@ -6,7 +6,6 @@ require('dotenv').config() //--Package de configuration des variables d’enviro
 
 //--Enregistrement de nouveaux utilisateurs
 exports.signup = (req, res, next) => {
-    console.log(req.body)
     //--Vérification du format du nom
     if (/^([a-zA-Z0-9-_]{2,36})$/g.test(req.body.name)) {
         //--Vérification du format du prénom

@@ -18,7 +18,7 @@ export default function Section() {
     const navigate = useNavigate()
     const SwalWelcome = require('sweetalert2')
     const [signUpIsActive, setSignUpIsActive] = useState(false)
-
+console.log(process.env.REACT_APP_ENVIRONMENT);
     const DisplayBlockSignUp = () => {
         setSignUpIsActive(true)
     }
@@ -93,7 +93,7 @@ export default function Section() {
                     password: password.value,
                 }),
             }
-            fetch(process.env.NODE_ENV === 'production' ?
+            fetch(process.env.REACT_APP_ENVIRONMENT === 'production' ?
                 'https://reseau-social-d-entreprise.herokuapp.com/groupomania/auth/login' :
                 'http://localhost:8000/groupomania/auth/login'
                 ,

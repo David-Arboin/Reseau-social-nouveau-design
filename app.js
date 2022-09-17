@@ -84,11 +84,10 @@ app.use('/groupomania/auth', userRoutes)
 app.use('/groupomania/users', usersRoutes)
 
 // Front route
-if (process.env.NODE_ENV === 'production') {
+if (process.env.REACT_APP_ENVIRONMENT === 'production') {
     app.use(express.static(path.join(__dirname, './frontend/build')))
     app.get('*', (req, res) => {
         res.sendFile(path.join(__dirname, '/./frontend/build/index.html'))
     })
 }
-
 module.exports = app //--Exporte l'application pour y accéder depuis les autres fichiers

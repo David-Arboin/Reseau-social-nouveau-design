@@ -51,7 +51,7 @@ const PostCard = (props) => {
             formData.append('image', form[2].files[0])
 
             fetch(
-                process.env.NODE_ENV === 'production'
+                process.env.REACT_APP_ENVIRONMENT === 'production'
                     ? production + '/' + postId
                     : developpement + '/' + postId,
                 requestOptionsModifiyPost
@@ -66,7 +66,7 @@ const PostCard = (props) => {
                         },
                     }
                     const newArrayPosts = fetch(
-                        process.env.NODE_ENV === 'production'
+                        process.env.REACT_APP_ENVIRONMENT === 'production'
                             ? production
                             : developpement,
                         requestOptions
@@ -89,7 +89,7 @@ const PostCard = (props) => {
             formData.append('post', form[0].value)
 
             fetch(
-                process.env.NODE_ENV === 'production'
+                process.env.REACT_APP_ENVIRONMENT === 'production'
                     ? production + '/' + postId
                     : developpement + '/' + postId,
                 requestOptionsModifiyPost
@@ -104,7 +104,7 @@ const PostCard = (props) => {
                         },
                     }
                     const newArrayPosts = fetch(
-                        process.env.NODE_ENV === 'production'
+                        process.env.REACT_APP_ENVIRONMENT === 'production'
                             ? production
                             : developpement,
                         requestOptions
@@ -128,7 +128,7 @@ const PostCard = (props) => {
             formData.append('image', form[2].files[0])
 
             fetch(
-                process.env.NODE_ENV === 'production'
+                process.env.REACT_APP_ENVIRONMENT === 'production'
                     ? production + '/' + postId
                     : developpement + '/' + postId,
                 requestOptionsModifiyPost
@@ -143,7 +143,7 @@ const PostCard = (props) => {
                         },
                     }
                     const newArrayPosts = fetch(
-                        process.env.NODE_ENV === 'production'
+                        process.env.REACT_APP_ENVIRONMENT === 'production'
                             ? production
                             : developpement,
                         requestOptions
@@ -174,7 +174,7 @@ const PostCard = (props) => {
             headers: { Authorization: 'Bearer ' + token },
         }
         fetch(
-            process.env.NODE_ENV === 'production'
+            process.env.REACT_APP_ENVIRONMENT === 'production'
                 ? production + '/' + target
                 : developpement + '/' + target,
             requestOptionsDelete
@@ -189,7 +189,7 @@ const PostCard = (props) => {
                     },
                 }
                 const newArrayPosts = fetch(
-                    process.env.NODE_ENV === 'production'
+                    process.env.REACT_APP_ENVIRONMENT === 'production'
                         ? production
                         : developpement,
                     requestOptions
@@ -232,7 +232,7 @@ const PostCard = (props) => {
             }
 
             await fetch(
-                process.env.NODE_ENV === 'production'
+                process.env.REACT_APP_ENVIRONMENT === 'production'
                     ? production + '/' + postId
                     : developpement + '/' + postId,
                 +'/like',
@@ -241,7 +241,7 @@ const PostCard = (props) => {
                 .then((response) => response.json())
                 .then((data) => {
                     const newArrayPosts = fetch(
-                        process.env.NODE_ENV === 'production'
+                        process.env.REACT_APP_ENVIRONMENT === 'production'
                             ? production
                             : developpement,
                         requestOptions
@@ -272,7 +272,7 @@ const PostCard = (props) => {
             }
 
             await fetch(
-                process.env.NODE_ENV === 'production'
+                process.env.REACT_APP_ENVIRONMENT === 'production'
                     ? production + '/' + postId + '/like'
                     : developpement + '/' + postId + '/like',
                 requestOptionsLike
@@ -280,7 +280,7 @@ const PostCard = (props) => {
                 .then((response) => response.json())
                 .then((data) => {
                     const newArrayPosts = fetch(
-                        process.env.NODE_ENV === 'production'
+                        process.env.REACT_APP_ENVIRONMENT === 'production'
                             ? production
                             : developpement,
                         requestOptions
@@ -327,7 +327,7 @@ const PostCard = (props) => {
             }),
         }
         await fetch(
-            process.env.NODE_ENV === 'production'
+            process.env.REACT_APP_ENVIRONMENT === 'production'
                 ? production + '/' + idPost[1] + '/comment'
                 : developpement + '/' + idPost[1] + '/comment',
             requestOptionsNewComment
@@ -342,7 +342,7 @@ const PostCard = (props) => {
                     },
                 }
                 const newArrayComments = fetch(
-                    process.env.NODE_ENV === 'production'
+                    process.env.REACT_APP_ENVIRONMENT === 'production'
                         ? production + '/' + idPost[1] + '/comments'
                         : developpement + '/' + idPost[1] + '/comments',
                     requestOptions
@@ -351,7 +351,7 @@ const PostCard = (props) => {
                     .then((data) => {
 
                         const newArrayPosts = fetch(
-                            process.env.NODE_ENV === 'production'
+                            process.env.REACT_APP_ENVIRONMENT === 'production'
                                 ? production
                                 : developpement,
                             requestOptions

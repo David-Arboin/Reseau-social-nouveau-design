@@ -38,7 +38,7 @@ export default function Section() {
     useEffect(() => {
         setIsLoading(true)
         fetch(
-            process.env.NODE_ENV === 'production' ? production : developpement,
+            process.env.REACT_APP_ENVIRONMENT === 'production' ? production : developpement,
             requestOptions
         )
             .then((response) => response.json())
@@ -85,7 +85,7 @@ export default function Section() {
             setIsLoading(true)
 
             fetch(
-                process.env.NODE_ENV === 'production'
+                process.env.REACT_APP_ENVIRONMENT === 'production'
                     ? production
                     : developpement,
                 requestOptionsCreate
@@ -100,7 +100,7 @@ export default function Section() {
                         },
                     }
                     const newArrayPosts = fetch(
-                        process.env.NODE_ENV === 'production'
+                        process.env.REACT_APP_ENVIRONMENT === 'production'
                             ? production
                             : developpement,
                         requestOptions
@@ -125,7 +125,7 @@ export default function Section() {
             setIsLoading(true)
 
             fetch(
-                process.env.NODE_ENV === 'production'
+                process.env.REACT_APP_ENVIRONMENT === 'production'
                     ? production
                     : developpement,
                 requestOptionsCreate
@@ -140,7 +140,7 @@ export default function Section() {
                         },
                     }
                     const newArrayPosts = fetch(
-                        process.env.NODE_ENV === 'production'
+                        process.env.REACT_APP_ENVIRONMENT === 'production'
                             ? production
                             : developpement,
                         requestOptions
@@ -166,7 +166,7 @@ export default function Section() {
             setIsLoading(true)
 
             fetch(
-                process.env.NODE_ENV === 'production'
+                process.env.REACT_APP_ENVIRONMENT === 'production'
                     ? production
                     : developpement,
                 requestOptionsCreate
@@ -181,7 +181,7 @@ export default function Section() {
                         },
                     }
                     const newArrayPosts = fetch(
-                        process.env.NODE_ENV === 'production'
+                        process.env.REACT_APP_ENVIRONMENT === 'production'
                             ? production
                             : developpement,
                         requestOptions
