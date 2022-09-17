@@ -1,0 +1,569 @@
+@font-face {
+    font-family: 'caviar_dreams';
+    src: url('../../fonts/caviar_dreams/CaviarDreams.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aubrey';
+    src: url('../../fonts/aubrey/AUBREY1__.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.display-logo {
+    position: absolute;
+    z-index: 2;
+    top: 8%;
+    left: 15%;
+    width: 36%;
+}
+.display-logo img {
+    width: 100%;
+}
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='reset'],
+input[type='submit'] {
+    background-color: #f8f6f9;
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+    padding: 0.5vw;
+    font-weight: bolder;
+    transition: ease-in-out, width 0.35s ease-in-out;
+}
+#day,
+#month,
+#year,
+#man,
+#women {
+    padding: 0.5vw;
+    background: #f8f6f9;
+}
+#day,
+#month,
+#year {
+    font-weight: bold;
+    width: 30%;
+}
+input[type='submit'] {
+    font-family: 'aubrey';
+    font-size: 2vw;
+    font-weight: bolder;
+}
+input[type='button'] {
+    font-family: 'aubrey';
+    font-size: 2vw;
+    font-weight: bolder;
+}
+#emailSignIn {
+    font-family: 'caviar-dreams';
+    font-weight: lighter;
+}
+#backgroudColorSubmitLogin,
+#backgroudColorSubmitSignUp,
+#backgroudColorSubmitSignIn {
+    background-color: #a6c3b0;
+    color: $color-black;
+}
+#background-color-button-for-sign-up {
+    background-color: #c9bb8e;
+    border-radius: 0.3vw;
+    padding: 1vw;
+    width: 75%;
+    color: white;
+}
+.displaySignup input {
+    margin: 10px 0 10px 0;
+}
+.signUp {
+    position: absolute;
+    z-index: 3;
+    margin-left: 32%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0.1%;
+    width: 35%;
+    height: 90vh;
+    text-align: center;
+    border-radius: 0.1vw;
+    color: black;
+    background-color: white;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.signUp h1 {
+    text-align: start;
+    margin-left: 5%;
+    font-size: 3vw;
+    font-weight: lighter;
+}
+.display-name-firstname {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.display-name,
+.display-first-name {
+    width: 60%;
+}
+.display-men-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f6f9;
+    border-radius: 0.2vw;
+    width: 47.5%;
+    padding-right: 10px;
+}
+.display-woman-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f6f9;
+    border-radius: 0.2vw;
+    width: 47.5%;
+    padding-right: 10px;
+}
+.display-men {
+}
+.display-woman {
+}
+.display-text {
+    width: 90%;
+    text-align: start;
+    font-size: 1vw;
+    font-family: 'caviar_dreams';
+}
+.display-text span {
+    text-decoration: underline;
+}
+input {
+    border: none;
+}
+input[type='text'] {
+    width: 48%;
+}
+
+input[type='email'] {
+    width: 90%;
+}
+
+input[type='password'] {
+    width: 90%;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus {
+    width: 80%;
+    background: $color-white;
+}
+
+input[type='reset']:focus-visible,
+input[type='submit']:focus-visible {
+    background: $color-black;
+    transform: scale(1.5);
+    color: $color-white;
+}
+input[type='submit'] {
+    width: 100%;
+}
+#backgroudColorSubmitLogin:focus-visible,
+#backgroudColorSubmitSignUp:focus-visible,
+#backgroudColorSubmitSignIn:focus-visible {
+    background-color: $color-black;
+    color: $color-white;
+}
+input[type='reset'],
+input[type='submit'] {
+    color: $color-black;
+    border-radius: 0.3vw;
+}
+h1,
+label,
+.messageTeamTechnique {
+    color: black;
+    font-family: 'aubrey';
+    width: 80%;
+    text-align: center;
+}
+.messageTeamTechnique span {
+    font-family: 'aubrey';
+    font-weight: bolder;
+}
+.SwalWelcome.fire-text {
+    font-size: 5vw;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+}
+#emailSignIn::placeholder,
+#passwordSignIn::placeholder,
+#passwordSignIn::placeholder {
+    color: $color-black;
+    padding-left: 0;
+}
+#firstname,
+#name,
+#emailSignUp,
+#passwordSignup,
+#month,
+#day,
+#year,
+#man,
+#women {
+    font-size: 1.5vw;
+}
+#man,
+#women {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+section {
+    height: 100%;
+    display: flex;
+}
+.display-image-background {
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+.display-image-background img {
+    height: 100%;
+    width: 150%;
+    object-fit: cover;
+}
+.display-sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 55%;
+    background: #f9f9f9;
+}
+.error {
+    text-align: left;
+    color: $color-alert;
+}
+.displayLogin,
+.displaySignup {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.display-day-month-year {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+}
+.display-men-woman {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 7px;
+}
+.display-men,
+.display-woman {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.displayLogin {
+    aspect-ratio: 1/0.7;
+}
+.displaySignup {
+    aspect-ratio: 1/0.7;
+}
+label .password-icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 20px;
+    color: #f9f9f9;
+    transition: all 0.2s;
+}
+
+label .password-icon:hover {
+    cursor: pointer;
+    color: #ff4754;
+}
+
+label .password-icon .fa-eye-slash {
+    display: none;
+}
+h1,
+label {
+    font-size: 2vw;
+    color: black;
+}
+
+.signIn,
+.signInAfterSignUp {
+    text-align: center;
+    border-radius: 0.1vw;
+    color: black;
+    background-color: #f8f6f9;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.signInAfterSignUp {
+    margin: 0 0 5vw 0;
+}
+.displayResetSubmit {
+    margin-bottom: 5%;
+}
+/*Smartphone*/
+@media (max-width: 426px) {
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 10% 0 10%;
+    }
+    h1,
+    label {
+        font-size: 4vw;
+    }
+    html,
+    .App {
+        height: auto;
+        background-color: $color-tertiary;
+    }
+
+    .signUp,
+    .signIn {
+        text-align: center;
+        width: 100%;
+    }
+    .signIn {
+        height: 68vw;
+        margin-bottom: 5vw;
+    }
+    .signUp {
+        height: 80vh;
+    }
+
+    .widthTextNameOrPseeudo {
+        font-size: 5vw;
+    }
+
+    input[type='text'] {
+        width: 40%;
+        transition: ease-in-out, width 0.35s ease-in-out;
+    }
+
+    input[type='email'] {
+        width: 50%;
+        transition: ease-in-out, width 0.35s ease-in-out;
+    }
+
+    input[type='password'] {
+        width: 60%;
+        transition: ease-in-out, width 0.35s ease-in-out;
+    }
+
+    input[type='text']:focus,
+    input[type='email']:focus,
+    input[type='password']:focus {
+        width: 100%;
+        background: $color-white;
+    }
+
+    input[type='reset']:active,
+    input[type='submit']:active {
+        cursor: grabbing;
+    }
+    input[type='reset'],
+    input[type='submit'] {
+        border-radius: 2vw;
+    }
+    label {
+        font-size: 6vw;
+    }
+    .separator {
+        height: 1%;
+        aspect-ratio: 50/1;
+    }
+
+    .displayLogin,
+    .displaySignup {
+        width: 100%;
+        aspect-ratio: 1/0.5;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .displayResetSubmit {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 10% 0 10% 0;
+    }
+
+    label {
+        text-align: left;
+    }
+    .numberOfLikes {
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+}
+
+#nameSignUp::placeholder {
+    font-size: 3vw;
+}
+
+#emailSignIn::placeholder,
+#emailSignUp::placeholder {
+    font-size: 4vw;
+}
+
+#passwordSignIn::placeholder,
+#passwordSignUp::placeholder {
+    font-size: 3.4vw;
+}
+
+/*Tablette*/
+@media (min-width: 426px) and (max-width: 1023px) {
+    section {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .login,
+    .signup {
+        text-align: center;
+    }
+    .separator {
+        width: 1%;
+        aspect-ratio: 1/100;
+    }
+
+    .displayLogin,
+    .displaySignup {
+        width: 100%;
+        aspect-ratio: 1/0.75;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .signUp,
+    .signIn {
+        text-align: center;
+        width: 40%;
+    }
+    .signIn,
+    .signUp {
+        margin-bottom: 5vw;
+    }
+
+    .displayResetSubmit {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .displayResetSubmit {
+        width: 90%;
+    }
+    #nameSignUp::placeholder {
+        font-size: 1.5vw;
+    }
+
+    #emailSignIn::placeholder,
+    #emailSignUp::placeholder {
+        font-size: 2vw;
+    }
+
+    #passwordSignIn::placeholder,
+    #passwordSignUp::placeholder {
+        font-size: 1.5vw;
+    }
+    .messageTeamTechnique {
+        font-size: 3vw;
+        width: 80%;
+    }
+    label {
+        text-align: left;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+    h1,
+    label {
+        font-size: 1.5vw;
+    }
+    .separator {
+        width: 1%;
+        aspect-ratio: 1/100;
+    }
+    section {
+        flex-wrap: wrap;
+    }
+
+    .signIn {
+        width: 60%;
+        aspect-ratio: 1/1;
+    }
+
+    .input:focus-visible {
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .displayResetSubmit {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    label {
+        text-align: left;
+        font-size: 2vw;
+    }
+    #nameSignUp::placeholder {
+        font-size: 1vw;
+    }
+
+    #emailSignIn::placeholder {
+        font-size: 1vw;
+    }
+    #emailSignUp::placeholder {
+        font-size: 1.5vw;
+    }
+    #passwordSignIn::placeholder,
+    #passwordSignUp::placeholder {
+        font-size: 1vw;
+    }
+    .messageTeamTechnique {
+        font-size: 3vw;
+        width: 80%;
+    }
+}

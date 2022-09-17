@@ -1,0 +1,13 @@
+@import "./styles/variables";
+
+@import "./styles/bases";
+@import "./styles/buttons";
+@import "./styles/loading__spinner";
+@import "./styles/setting";
+
+@import "./components/Header/header";
+@import "./pages/loginPage/loginPage";
+@import "./pages/homePage/homePage";
+
+@import "./App.scss";
+
